@@ -13,8 +13,9 @@ const images = (function() {
     }
 
     const displayImage = () => {
+        displayedImage.classList.toggle('fade');
         displayedImage.src = imageFiles[currentIndex];
-        console.log({imageFiles, imageFiles})
+        displayedImage.classList.toggle('fade');
     }
 
     let currentIndex = 0;
