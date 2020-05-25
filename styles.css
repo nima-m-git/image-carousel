@@ -1,0 +1,22 @@
+.carousel {
+    border: 1px solid black;
+    display: flex;
+    width: 80vw;
+    height: 60vw;
+    flex-wrap: nowrap;
+}
+
+#img-container {
+    background-color: aqua;
+    width: 90%;
+    height: 95%;
+}
+
+#displayed-img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+}
+
