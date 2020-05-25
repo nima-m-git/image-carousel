@@ -13,9 +13,7 @@ const images = (function() {
     }
 
     const displayImage = () => {
-        displayedImage.classList.toggle('fade');
         displayedImage.src = imageFiles[currentIndex];
-        displayedImage.classList.toggle('fade');
     }
 
     let currentIndex = 0;
@@ -64,6 +62,10 @@ sampleImages.map(image => images.addImage('static/images/' + image));
 
 
 //      Event Listeners     \\
+const toggle = () => {
+
+}
+
 nextBtn.addEventListener('click', function() {
     images.nextImage();
 })
@@ -71,3 +73,7 @@ backBtn.addEventListener('click', function() {
     images.lastImage();
 }) 
 
+
+setInterval(function() {
+    images.nextImage();
+}, 5000);
